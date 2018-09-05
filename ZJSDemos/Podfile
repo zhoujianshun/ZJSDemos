@@ -1,0 +1,27 @@
+platform:ios, '9.0'
+use_frameworks!
+inhibit_all_warnings! 
+
+target 'ZJSDemos' do
+
+  pod 'YTKNetwork'
+  pod 'MJRefresh'
+  pod 'Masonry'
+  pod 'IQKeyboardManager'
+
+  pod 'YYText'
+  pod 'YYImage'
+  pod 'YYModel'
+  pod 'YYCache'
+
+ #pod 'BFKit'
+
+  pod 'SDWebImage'
+  
+  pod 'MBProgressHUD'
+
+
+end
+
+
+

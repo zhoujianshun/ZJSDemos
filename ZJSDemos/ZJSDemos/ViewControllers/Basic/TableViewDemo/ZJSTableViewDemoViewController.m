@@ -32,7 +32,7 @@
 
 @implementation ZJSTableViewDemoViewController
 
-
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -67,7 +67,7 @@
     plainDemoVM.hiddenSeparateLine = YES;
 
     plainDemoVM.cellTappedActionBlock = ^(ZJSTableViewCellBaseViewModel *sender) {
-        
+        [weakself gotoPlainDemo];
     };
     [datas addObject:plainDemoVM];
     
@@ -75,7 +75,7 @@
     groupedDemoVM.title = @"UITableViewStyleGrouped";
     groupedDemoVM.hiddenSeparateLine = YES;
     groupedDemoVM.cellTappedActionBlock = ^(ZJSTableViewCellBaseViewModel *sender) {
-        
+        [weakself gotoGroupedDemo];
     };
     [datas addObject:groupedDemoVM];
     

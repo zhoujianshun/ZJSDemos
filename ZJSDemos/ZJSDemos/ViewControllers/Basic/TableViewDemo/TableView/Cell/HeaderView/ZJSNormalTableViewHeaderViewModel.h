@@ -11,5 +11,6 @@
 @interface ZJSNormalTableViewHeaderViewModel : ZJSTableViewHeaderBaseViewModel
 
 @property (nonatomic, copy) NSString *message;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 @end

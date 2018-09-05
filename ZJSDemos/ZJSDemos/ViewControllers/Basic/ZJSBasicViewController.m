@@ -10,12 +10,13 @@
 
 #import <Masonry/Masonry.h>
 
+#import "ZJSReferenceMacros.h"
+
 #import "ZJSNormalTableViewCell.h"
 #import "ZJSNormalTableViewCellViewModel.h"
 
-#import "ZJSReferenceMacros.h"
-
 #import "ZJSTableViewDemoViewController.h"
+#import "ZJSWebViewNormalDemoViewController.h"
 
 
 
@@ -27,10 +28,11 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
 
 @property (nonatomic, copy) NSArray<ZJSTableViewCellBaseViewModel*> *datas;
 
+
 @end
 
 @implementation ZJSBasicViewController
-
+#pragma mark - life cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -54,10 +56,10 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
     
 }
 
-
 -(void)loadDatas{
     NSMutableArray *datas = [NSMutableArray array];
     
+    //
     ZJSNormalTableViewCellViewModel *tableViewDemoVM = [[ZJSNormalTableViewCellViewModel alloc] init];
     tableViewDemoVM.title = @"UITableView Demo";
     tableViewDemoVM.hiddenSeparateLine = YES;
@@ -68,6 +70,16 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
     };
     [datas addObject:tableViewDemoVM];
     
+    //
+    
+    ZJSNormalTableViewCellViewModel *webviewDemoVM = [[ZJSNormalTableViewCellViewModel alloc] init];
+    webviewDemoVM.title = @"WKWebView Demo";
+    webviewDemoVM.hiddenSeparateLine = YES;
+
+    webviewDemoVM.cellTappedActionBlock = ^(ZJSTableViewCellBaseViewModel *sender) {
+        [weakself gotoWebViewDemo];
+    };
+    [datas addObject:webviewDemoVM];
     
     self.datas = [datas copy];
 }
@@ -97,6 +109,11 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
 
 -(void)gotoTableViewDemo{
     ZJSTableViewDemoViewController *vc = [[ZJSTableViewDemoViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)gotoWebViewDemo{
+    ZJSWebViewNormalDemoViewController *vc = [[ZJSWebViewNormalDemoViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

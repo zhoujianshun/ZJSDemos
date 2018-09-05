@@ -10,4 +10,7 @@
 
 @interface ZJSViewController : UIViewController
 
+// 返回按钮按下
+- (void)backBtnClicked:(UIButton *)sender;
+
 @end

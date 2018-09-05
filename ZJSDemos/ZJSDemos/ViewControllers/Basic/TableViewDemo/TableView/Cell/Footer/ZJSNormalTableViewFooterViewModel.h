@@ -11,5 +11,6 @@
 @interface ZJSNormalTableViewFooterViewModel : ZJSTableViewFooterBaseViewModel
 
 @property (nonatomic, copy) NSString *message;
+@property (nonatomic, strong) UIColor *backgroundColor;
 
 @end

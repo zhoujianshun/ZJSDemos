@@ -17,6 +17,8 @@
 
 #import "ZJSTableViewDemoViewController.h"
 #import "ZJSWebViewNormalDemoViewController.h"
+#import "ZJSNaviBarHideDemoViewController.h"
+#import "ZJSStatusBarHideDemoViewController.h"
 
 
 
@@ -59,7 +61,7 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
 -(void)loadDatas{
     NSMutableArray *datas = [NSMutableArray array];
     
-    //
+    // UITableView Demo
     ZJSNormalTableViewCellViewModel *tableViewDemoVM = [[ZJSNormalTableViewCellViewModel alloc] init];
     tableViewDemoVM.title = @"UITableView Demo";
     tableViewDemoVM.hiddenSeparateLine = YES;
@@ -70,7 +72,7 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
     };
     [datas addObject:tableViewDemoVM];
     
-    //
+    // WKWebView Demo
     
     ZJSNormalTableViewCellViewModel *webviewDemoVM = [[ZJSNormalTableViewCellViewModel alloc] init];
     webviewDemoVM.title = @"WKWebView Demo";
@@ -80,6 +82,26 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
         [weakself gotoWebViewDemo];
     };
     [datas addObject:webviewDemoVM];
+    
+    // naviBarHide Demo
+    ZJSNormalTableViewCellViewModel *naviHideDemoVM = [[ZJSNormalTableViewCellViewModel alloc] init];
+    naviHideDemoVM.title = @"naviBarHide Demo";
+    naviHideDemoVM.hiddenSeparateLine = YES;
+    
+    naviHideDemoVM.cellTappedActionBlock = ^(ZJSTableViewCellBaseViewModel *sender) {
+        [weakself gotoNaviBarHideDemo];
+    };
+    [datas addObject:naviHideDemoVM];
+    
+    // naviBarHide Demo
+    ZJSNormalTableViewCellViewModel *statusBarHideDemoVM = [[ZJSNormalTableViewCellViewModel alloc] init];
+    statusBarHideDemoVM.title = @"statusBarHide Demo";
+    statusBarHideDemoVM.hiddenSeparateLine = YES;
+    
+    statusBarHideDemoVM.cellTappedActionBlock = ^(ZJSTableViewCellBaseViewModel *sender) {
+        [weakself gotoStatusBarHideDemo];
+    };
+    [datas addObject:statusBarHideDemoVM];
     
     self.datas = [datas copy];
 }
@@ -114,6 +136,16 @@ NSString* const kZJSCellIdentify = @"kZJSCellIdentify";
 
 -(void)gotoWebViewDemo{
     ZJSWebViewNormalDemoViewController *vc = [[ZJSWebViewNormalDemoViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)gotoNaviBarHideDemo{
+    ZJSNaviBarHideDemoViewController *vc = [[ZJSNaviBarHideDemoViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+-(void)gotoStatusBarHideDemo{
+    ZJSStatusBarHideDemoViewController *vc = [[ZJSStatusBarHideDemoViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

@@ -29,6 +29,11 @@
 		0776A236213FC5D20016C508 /* ZJSWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776A235213FC5D20016C508 /* ZJSWebViewController.m */; };
 		0776A23C213FCC400016C508 /* NSString+ZJSUrlCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776A23B213FCC400016C508 /* NSString+ZJSUrlCode.m */; };
 		0776A240213FCD7A0016C508 /* ZJSWebViewNormalDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776A23F213FCD7A0016C508 /* ZJSWebViewNormalDemoViewController.m */; };
+		0776A244214102AB0016C508 /* ZJSNaviBarHideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776A243214102AB0016C508 /* ZJSNaviBarHideDemoViewController.m */; };
+		0776A247214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776A246214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.m */; };
+		0776A2492141030E0016C508 /* ZJSNaviBarHideDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0776A2482141030E0016C508 /* ZJSNaviBarHideDemoViewController.xib */; };
+		0776A24E214109300016C508 /* ZJSStatusBarHideDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0776A24C214109300016C508 /* ZJSStatusBarHideDemoViewController.m */; };
+		0776A24F214109300016C508 /* ZJSStatusBarHideDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0776A24D214109300016C508 /* ZJSStatusBarHideDemoViewController.xib */; };
 		07F04CA1213D3170002D1B5B /* ZJSNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F04C9E213D3170002D1B5B /* ZJSNormalTableViewCell.m */; };
 		07F04CA2213D3170002D1B5B /* ZJSNormalTableViewCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F04CA0213D3170002D1B5B /* ZJSNormalTableViewCellViewModel.m */; };
 		07F04CA6213D3201002D1B5B /* ZJSNormalTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F04CA5213D3201002D1B5B /* ZJSNormalTableViewHeaderView.m */; };
@@ -103,6 +108,14 @@
 		0776A23B213FCC400016C508 /* NSString+ZJSUrlCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ZJSUrlCode.m"; sourceTree = "<group>"; };
 		0776A23E213FCD7A0016C508 /* ZJSWebViewNormalDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSWebViewNormalDemoViewController.h; sourceTree = "<group>"; };
 		0776A23F213FCD7A0016C508 /* ZJSWebViewNormalDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSWebViewNormalDemoViewController.m; sourceTree = "<group>"; };
+		0776A242214102AB0016C508 /* ZJSNaviBarHideDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSNaviBarHideDemoViewController.h; sourceTree = "<group>"; };
+		0776A243214102AB0016C508 /* ZJSNaviBarHideDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSNaviBarHideDemoViewController.m; sourceTree = "<group>"; };
+		0776A245214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSNaviBarHideDemoNextViewController.h; sourceTree = "<group>"; };
+		0776A246214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSNaviBarHideDemoNextViewController.m; sourceTree = "<group>"; };
+		0776A2482141030E0016C508 /* ZJSNaviBarHideDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZJSNaviBarHideDemoViewController.xib; sourceTree = "<group>"; };
+		0776A24B214109300016C508 /* ZJSStatusBarHideDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSStatusBarHideDemoViewController.h; sourceTree = "<group>"; };
+		0776A24C214109300016C508 /* ZJSStatusBarHideDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSStatusBarHideDemoViewController.m; sourceTree = "<group>"; };
+		0776A24D214109300016C508 /* ZJSStatusBarHideDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZJSStatusBarHideDemoViewController.xib; sourceTree = "<group>"; };
 		078CB092213D2C240042481F /* ZJSColorsMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSColorsMacros.h; sourceTree = "<group>"; };
 		078CB09B213D2D250042481F /* ZJSTableViewMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJSTableViewMacros.h; sourceTree = "<group>"; };
 		07F04C9D213D3170002D1B5B /* ZJSNormalTableViewCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJSNormalTableViewCellViewModel.h; sourceTree = "<group>"; };
@@ -237,6 +250,8 @@
 		071EDDBE2137DD2E00276521 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				0776A24A214108900016C508 /* StatusBarHideDemo */,
+				0776A2412141028A0016C508 /* NaviBarHideDemo */,
 				0776A23D213FCCFD0016C508 /* WebViewDemo */,
 				078CB089213D075C0042481F /* TableViewDemo */,
 				071EDDC32137DD8000276521 /* ZJSBasicViewController.h */,
@@ -318,6 +333,28 @@
 				0776A23F213FCD7A0016C508 /* ZJSWebViewNormalDemoViewController.m */,
 			);
 			path = WebViewDemo;
+			sourceTree = "<group>";
+		};
+		0776A2412141028A0016C508 /* NaviBarHideDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0776A242214102AB0016C508 /* ZJSNaviBarHideDemoViewController.h */,
+				0776A243214102AB0016C508 /* ZJSNaviBarHideDemoViewController.m */,
+				0776A2482141030E0016C508 /* ZJSNaviBarHideDemoViewController.xib */,
+				0776A245214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.h */,
+				0776A246214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.m */,
+			);
+			path = NaviBarHideDemo;
+			sourceTree = "<group>";
+		};
+		0776A24A214108900016C508 /* StatusBarHideDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0776A24B214109300016C508 /* ZJSStatusBarHideDemoViewController.h */,
+				0776A24C214109300016C508 /* ZJSStatusBarHideDemoViewController.m */,
+				0776A24D214109300016C508 /* ZJSStatusBarHideDemoViewController.xib */,
+			);
+			path = StatusBarHideDemo;
 			sourceTree = "<group>";
 		};
 		078CB089213D075C0042481F /* TableViewDemo */ = {
@@ -535,6 +572,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				071EDD8D2137D8BF00276521 /* LaunchScreen.storyboard in Resources */,
+				0776A24F214109300016C508 /* ZJSStatusBarHideDemoViewController.xib in Resources */,
+				0776A2492141030E0016C508 /* ZJSNaviBarHideDemoViewController.xib in Resources */,
 				071EDD8A2137D8BF00276521 /* Assets.xcassets in Resources */,
 				071EDD882137D8BD00276521 /* Main.storyboard in Resources */,
 			);
@@ -622,7 +661,9 @@
 			files = (
 				0776A23C213FCC400016C508 /* NSString+ZJSUrlCode.m in Sources */,
 				07F04CAD213D32AD002D1B5B /* ZJSNormalTableViewFooterView.m in Sources */,
+				0776A247214102CA0016C508 /* ZJSNaviBarHideDemoNextViewController.m in Sources */,
 				07F04CB0213D32C5002D1B5B /* ZJSNormalTableViewFooterViewModel.m in Sources */,
+				0776A24E214109300016C508 /* ZJSStatusBarHideDemoViewController.m in Sources */,
 				07F04CB3213E58B8002D1B5B /* ZJSTableViewDemoViewController.m in Sources */,
 				07F04CA6213D3201002D1B5B /* ZJSNormalTableViewHeaderView.m in Sources */,
 				071EDD852137D8BD00276521 /* ViewController.m in Sources */,
@@ -635,6 +676,7 @@
 				0776A232213FB1840016C508 /* ZJSTableViewStylePlainDemoViewController.m in Sources */,
 				071EDDD42137E61800276521 /* ZJSTableViewHeaderBaseViewModel.m in Sources */,
 				071EDD822137D8BD00276521 /* AppDelegate.m in Sources */,
+				0776A244214102AB0016C508 /* ZJSNaviBarHideDemoViewController.m in Sources */,
 				071EDDD62137E61800276521 /* ZJSTableViewGroupBaseModel.m in Sources */,
 				071EDDBD2137DCE000276521 /* ZJSNavigationController.m in Sources */,
 				07F04CA2213D3170002D1B5B /* ZJSNormalTableViewCellViewModel.m in Sources */,
